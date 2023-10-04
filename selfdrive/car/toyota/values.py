@@ -704,12 +704,14 @@ FW_VERSIONS = {
   },
   CAR.CAMRYH_TSS2: {
     (Ecu.eps, 0x7a1, None): [
+      b'8965B33621\x00\x00\x00\x00\x00\x00', /* <-- notice that the firmware from car params is added here. */
       b'8965B33630\x00\x00\x00\x00\x00\x00',
       b'8965B33650\x00\x00\x00\x00\x00\x00',
     ],
     (Ecu.abs, 0x7b0, None): [
       b'F152633D00\x00\x00\x00\x00\x00\x00',
       b'F152633D60\x00\x00\x00\x00\x00\x00',
+      b'F152633214\x00\x00\x00\x00\x00\x00', /* <-- notice that the firmware from car params is added here. */
       b'F152633310\x00\x00\x00\x00\x00\x00',
     ],
     (Ecu.engine, 0x700, None): [
@@ -717,19 +719,45 @@ FW_VERSIONS = {
       b'\x018966306Q7000\x00\x00\x00\x00',
       b'\x018966306T0000\x00\x00\x00\x00',
       b'\x018966306V1000\x00\x00\x00\x00',
+      b'\x018966306L9000\x00\x00\x00\x00', /* <-- notice that the firmware from car params is added here. */
       b'\x01896633T20000\x00\x00\x00\x00',
     ],
     (Ecu.fwdRadar, 0x750, 15): [
       b'\x018821F6201200\x00\x00\x00\x00',
       b'\x018821F6201300\x00\x00\x00\x00',
       b'\x018821F6201400\x00\x00\x00\x00',
+      b'8821F0609100    ',
     ],
     (Ecu.fwdCamera, 0x750, 109): [
       b'\x028646F3305200\x00\x00\x00\x008646G5301200\x00\x00\x00\x00',
       b'\x028646F3305300\x00\x00\x00\x008646G5301200\x00\x00\x00\x00',
       b'\x028646F3305300\x00\x00\x00\x008646G3304000\x00\x00\x00\x00',
       b'\x028646F3305500\x00\x00\x00\x008646G3304000\x00\x00\x00\x00',
+      b'8646F0601400    ',
     ],
+  /* START. notice that the firmware from car params is added here. */
+    (Ecu.dsu, 0x791, None): [
+      b'8821F0609100    ',
+    ],
+    (Ecu.srs, 0x780, None): [
+      b'8917F06420\x00\x00\x00\x00\x00\x00',
+    ],
+    (Ecu.srs, 0x784, None): [
+      b'8917F06420\x00\x00\x00\x00\x00\x00',
+    ],
+    (Ecu.hvac, 0x7C4, None): [
+      b'8865F3301101    ',
+    ],
+    (Ecu.hybrid, 0x7D2, None): [
+      b'\x02899833325100\x00\x00\x00\x00899853310000\x00\x00\x00\x00',
+    ],
+    (Ecu.combinationMeter, 0x7C0, None): [
+      b'\x03838000XF3128\x00\x00\x00\x00838000XF3222\x00\x00\x00\x00838000XF3322\x00\x00\x00\x00',
+    ],
+    (Ecu.epb, 0x750, 44): [
+      b'895DF33010\x00\x00\x00\x00\x00\x00',
+    ],    
+  /* END. notice that the firmware from car params is added here. */
   },
   CAR.CHR: {
     (Ecu.engine, 0x700, None): [
