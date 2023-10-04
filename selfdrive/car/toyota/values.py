@@ -726,14 +726,14 @@ FW_VERSIONS = {
       b'\x018821F6201200\x00\x00\x00\x00',
       b'\x018821F6201300\x00\x00\x00\x00',
       b'\x018821F6201400\x00\x00\x00\x00',
-      b'8821F0609100    ',
+      b'8821F0609100    ', #notice that the firmware from car params is added here.
     ],
     (Ecu.fwdCamera, 0x750, 109): [
       b'\x028646F3305200\x00\x00\x00\x008646G5301200\x00\x00\x00\x00',
       b'\x028646F3305300\x00\x00\x00\x008646G5301200\x00\x00\x00\x00',
       b'\x028646F3305300\x00\x00\x00\x008646G3304000\x00\x00\x00\x00',
       b'\x028646F3305500\x00\x00\x00\x008646G3304000\x00\x00\x00\x00',
-      b'8646F0601400    ',
+      b'8646F0601400    ', #notice that the firmware from car params is added here.
     ],
   # START. notice that the firmware from car params is added here.
     (Ecu.dsu, 0x791, None): [
